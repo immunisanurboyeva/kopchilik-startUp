@@ -1,1 +1,19 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.splash-screen {
+  height: 100vh;
+  background-image: url(./src/splash-screen_bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}/*# sourceMappingURL=main.css.map */
