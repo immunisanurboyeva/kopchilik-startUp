@@ -1,3 +1,21 @@
+:root {
+  --bg-main: #141218;
+  --bg-secondary: #2B292F;
+  --secondary: #CFBCFF;
+  --text-main: #CBC4D2;
+  --text-main-secondary: #CBC4D280;
+  --text-secondary: #E0D2FF;
+  --text-dardker: #381E72;
+  --yellow: #E7C365;
+  --bg-yellow: #E7C3651A;
+  --bg-active: #6750A433;
+  --white: #FFFFFF;
+  --black: #141218;
+  --bg-card: #211F24CC;
+  --border: #36343A;
+  --text-inp: #6B7280;
+}
+
 * {
   margin: 0;
   padding: 0;
