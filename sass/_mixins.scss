@@ -1,5 +1,8 @@
-@mixin btnNext {
-
+@mixin direction-flex($col, $gap, $align) {
+  display: flex;
+  flex-direction: $col;
+  gap: $gap;
+  align-items: $align;
 }
 
 // for use:
