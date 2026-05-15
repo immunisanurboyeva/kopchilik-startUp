@@ -15,6 +15,7 @@
   --bg-card: #211F24CC;
   --border: #36343A;
   --text-inp: #6B7280;
+  --text: #E6E0E9;
 }
 
 * {
@@ -234,4 +235,66 @@ body {
   border-radius: 100px;
   filter: blur(120px);
   z-index: -9;
+}
+
+.onboarding2 {
+  background: var(--bg-main);
+  color: var(--text);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.onboarding2-main {
+  margin: 0 auto;
+  width: 520px;
+  padding: 1.3rem;
+  background: rgba(255, 255, 255, 0.2352941176);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.visualisation__section {
+  background: rgba(255, 255, 255, 0.168627451);
+  height: 490px;
+  display: flex;
+  align-items: center;
+}
+
+.visualisation__section div {
+  background: rgba(255, 255, 255, 0.168627451);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.content__section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content__section-heading {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.content__section-text {
+  color: var(--text-main);
+  font-family: inter;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.proggressIndicators {
+  width: 1rem;
+  height: 1rem;
+  background: var(--border);
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
