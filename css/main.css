@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 :root {
   --bg-main: #141218;
   --bg-secondary: #2B292F;
@@ -14,6 +16,7 @@
   --bg-card: #211F24CC;
   --border: #36343A;
   --text-inp: #6B7280;
+  --text: #E6E0E9;
 }
 
 * {
@@ -25,7 +28,26 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 auto;
+  font-family: sans-serif;
+}
+
+button, input {
+  border-style: none;
+}
+
+.btnNext {
+  font-family: inter;
+  color: var(--text-dardker);
+  border-radius: 20rem;
+  font-size: 16px;
+  font-weight: 600;
+  background: var(--secondary);
+  padding: 1.4rem;
+  width: 93%;
+  position: absolute;
+  bottom: 2.4rem;
+  left: 1rem;
+  right: 1rem;
 }
 
 .splash-screen {
@@ -34,4 +56,66 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.onboarding2 {
+  background: var(--bg-main);
+  color: var(--text);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.onboarding2-main {
+  margin: 0 auto;
+  width: 520px;
+  padding: 1.3rem;
+  background: rgba(255, 255, 255, 0.2352941176);
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.visualisation__section {
+  background: rgba(255, 255, 255, 0.168627451);
+  height: 490px;
+  display: flex;
+  align-items: center;
+}
+
+.visualisation__section div {
+  background: rgba(255, 255, 255, 0.168627451);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.content__section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content__section-heading {
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.content__section-text {
+  color: var(--text-main);
+  font-family: inter;
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.proggressIndicators {
+  width: 1rem;
+  height: 1rem;
+  background: var(--border);
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 :root{
     --bg-main: #141218;
     --bg-secondary: #2B292F;
@@ -14,6 +17,7 @@
     --bg-card: #211F24CC;
     --border: #36343A;
     --text-inp: #6B7280;
+    --text: #E6E0E9;
 }
 *{
     margin: 0;
@@ -24,5 +28,25 @@
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    font-family: sans-serif;
+}
+button, input{
+    border-style: none;
+}
+
+.btnNext{
+    font-family: inter;
+    color: var(--text-dardker);
+    border-radius: 20rem;
+    font-size: 16px;
+    font-weight: 600;
+    background: var(--secondary);
+    padding: 1.4rem;
+    width: 93%;
+    position: absolute;
+    bottom: 2.4rem;
+    left: 1rem;
+    right: 1rem;
+
 }
 
