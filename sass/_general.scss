@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gasoek+One&family=Inder&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap');
 
+:root{
+    --bg-main: #141218;
+    --bg-secondary: #2B292F;
+    --secondary: #CFBCFF;
+    --text-main: #CBC4D2;
+    --text-main-secondary: #CBC4D280;
+    --text-secondary: #E0D2FF;
+    --text-dardker: #381E72;
+    --yellow: #E7C365;
+    --bg-yellow: #E7C3651A;
+    --bg-active: #6750A433;
+    --white: #FFFFFF;
+    --black: #141218;
+    --bg-card: #211F24CC;
+    --border: #36343A;
+    --text-inp: #6B7280;
+}
 *{
     margin: 0;
     padding: 0;
@@ -18,11 +35,45 @@ body{
 }
 
 .heading{
+    color: var(--white);
     font-size: 32px;
 }
 
 .desc{
   font-size: 16px;
-  color: #CBC4D2;
-  
+  color: var(--text-main);
+  line-height: 1.6;
 }
+
+.wrapper{
+    height: 100vh;
+    @include direction-flex(column, 14px, center);
+}
+
+.content-section{
+    @include direction-flex(column, 18px, center);
+    text-align: center;
+}
+
+.next-btn{
+    width: 300px;
+    height: 56px;
+    border: 0;
+    border-radius: 32px;
+    font-size: 17px;
+    color: var(--text-dardker);
+    background-color: var(--secondary);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.progress{
+    height: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    margin-top: 30px;
+    // border-radius: 12px;
+}
+

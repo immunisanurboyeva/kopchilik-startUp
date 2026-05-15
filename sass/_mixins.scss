@@ -1,8 +1,9 @@
-@mixin direction-flex($col, $gap, $align) {
+@mixin direction-flex($col, $gap, $justify) {
   display: flex;
   flex-direction: $col;
   gap: $gap;
-  align-items: $align;
+  justify-content: $justify;
+  align-items: center;
 }
 
 // for use:

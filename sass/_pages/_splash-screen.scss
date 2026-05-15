@@ -32,7 +32,7 @@ margin-top: 120px;
 }
 
 .splash-heading{
-  color: #fff;
+  color: var(--white);
   font-size: 40px;
 }
 
@@ -46,7 +46,7 @@ margin-top: 120px;
 .loader__bg-shadow{
   width: 64px;
   height: 100%;
-  background-color: #CFBCFF;
+  background-color: var(--secondary);
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
 }
@@ -55,7 +55,7 @@ margin-top: 120px;
   font-size: 15px;
   font-family: "Inter";
   letter-spacing: 2px;
-  color: #CBC4D2;
+  color: #5A5760;
 }
 
 .splash-screen::before{
@@ -65,7 +65,7 @@ margin-top: 120px;
   position: absolute;
   top: -144px;
   left:-88px ;
-  background-color: #CFBCFF;
+  background-color: var(--secondary);
   opacity: 0.4;
   border-radius: 100px;
   filter: blur(120px);
@@ -79,7 +79,7 @@ margin-top: 120px;
   position: absolute;
   bottom: -100px;
   right:-48px ;
-  background-color: #CFBCFF;
+  background-color: var(--secondary);
   opacity: 0.2;
   border-radius: 100px;
   filter: blur(120px);
