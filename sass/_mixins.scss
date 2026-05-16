@@ -1,0 +1,10 @@
+@mixin direction-flex($col, $gap, $justify) {
+  display: flex;
+  flex-direction: $col;
+  gap: $gap;
+  justify-content: $justify;
+  align-items: center;
+}
+
+// for use:
+// @include btnNext;
