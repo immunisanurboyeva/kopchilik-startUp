@@ -24,7 +24,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -33,7 +32,6 @@
 button, input{
     border-style: none;
 }
-
 .btnNext{
     font-family: inter;
     color: var(--text-dardker);
@@ -44,9 +42,10 @@ button, input{
     padding: 1.4rem;
     width: 93%;
     position: absolute;
-    bottom: 2.4rem;
+    bottom: 0;
     left: 1rem;
     right: 1rem;
-
 }
-
+a{
+    text-decoration: none;
+}

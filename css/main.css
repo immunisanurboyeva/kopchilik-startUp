@@ -45,9 +45,13 @@ button, input {
   padding: 1.4rem;
   width: 93%;
   position: absolute;
-  bottom: 2.4rem;
+  bottom: 0;
   left: 1rem;
   right: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 .splash-screen {
@@ -69,7 +73,7 @@ button, input {
   margin: 0 auto;
   width: 520px;
   padding: 1.3rem;
-  background: rgba(255, 255, 255, 0.2352941176);
+  background: rgba(122, 13, 144, 0.1764705882);
   height: 100vh;
   position: relative;
   display: flex;
@@ -77,18 +81,72 @@ button, input {
 }
 
 .visualisation__section {
-  background: rgba(255, 255, 255, 0.168627451);
   height: 490px;
   display: flex;
   align-items: center;
 }
 
 .visualisation__section div {
-  background: rgba(255, 255, 255, 0.168627451);
-  width: -moz-max-content;
-  width: max-content;
-  padding: 1rem;
+  border-radius: 50%;
+  padding: 1.4rem;
   margin: 0 auto;
+}
+
+.scene {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 16px;
+  min-height: 320px;
+}
+
+.rings-wrapper {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring-purple {
+  position: absolute;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  border: 8px solid var(--secondary);
+  box-shadow: 0px 0px 40px 20px rgba(207, 188, 255, 0.107);
+}
+
+.ring-yellow {
+  position: absolute;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  border: 8px solid var(--yellow);
+  box-shadow: 0px 0px 40px 40px rgba(207, 188, 255, 0.107);
+}
+
+.ring-black {
+  position: absolute;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  border: 1px solid var(--bg-secondary);
+  background: var(--bg-card);
+  overflow: hidden;
+  box-shadow: 0px 0px 40px 1cm rgba(207, 188, 255, 0.213);
+}
+
+.ring-black img {
+  width: 8.5rem;
+  height: 8.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--secondary);
+  transform: translate(-19px, -19px);
 }
 
 .content__section {
@@ -98,13 +156,13 @@ button, input {
   gap: 1rem;
 }
 
-.content__section-heading {
+.heading {
   font-size: 36px;
   font-weight: 600;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.content__section-text {
+.desc {
   color: var(--text-main);
   font-family: inter;
   letter-spacing: 1px;
@@ -113,9 +171,31 @@ button, input {
   font-size: 16px;
 }
 
+.navigation__seciton {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3.7rem;
+  position: relative;
+  height: 7rem;
+}
+
 .proggressIndicators {
-  width: 1rem;
-  height: 1rem;
-  background: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.proggressIndicator {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: var(--border);
   border-radius: 50%;
+}
+
+.proggressIndicator.activeBtn {
+  width: 2.7rem;
+  height: 0.7rem;
+  background-color: var(--secondary);
+  border-radius: 14px;
 }/*# sourceMappingURL=main.css.map */
